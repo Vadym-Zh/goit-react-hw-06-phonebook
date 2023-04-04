@@ -1,16 +1,13 @@
+import React from 'react';
+import ContactsList from './ContactsList/ContactsList';
+import Form from './Form/Form';
+import css from './Phonebook.module.css';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className={css.wrap}>
+      <Form />
+      <ContactsList title="Contacts" />
     </div>
   );
 };
